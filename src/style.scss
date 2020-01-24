@@ -81,13 +81,13 @@ body {
     .decoration:nth-of-type(1) {
       top: -95px;
       left: 74%;
-      animation-delay: 0.8s;
+      animation-delay: 1.4s;
     }
     .decoration:nth-of-type(2) {
       top: 40px;
       left: 71%;
       width: 400px;
-      animation-delay: 0.8s;
+      animation-delay: 1.4s;
     }
     .avatar, .avatar-circle {
       width: 120px;
@@ -109,7 +109,7 @@ body {
       transform: translateX(24px);
       opacity: 0;
       animation: slide-circle 1s forwards;
-      animation-delay: 0.5s;
+      animation-delay: 1s;
     }
     .name {
       display: flex;
