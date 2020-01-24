@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
+$base-color: linear-gradient(135deg, #48c6ef 0%, #6f86d6 100%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 50px;
+  justify-content: center;
+  background-color: #f8f8ff;
+  color: #636366;
+  font-family: 'Noto Sans', sans-serif;
+  
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+  a {
+    font-weight: 500;
+    color: #3b4144;
+  }
+  h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+  }
+  p {
+    font-size: 0.87rem;
+    line-height: 1.8;
+  }
+  ul li {
+    font-size: 0.87rem;
+    margin-left: 12px;
+  }
+  ul li:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-color: transparent; 
+    overflow: hidden;
+    resize: none;
+    background: transparent;
+  }
+}
+
+.title {
+  margin-bottom: 8px;
+}
+.about, .skill, .award, .experience, .certificate {
+  margin-bottom: 16px;
+}
+
+.resume {
+  margin: 0 auto;
+  max-width: 850px;
+  min-width: 700px;
+  border: solid #fff 7px;
+  padding: 24px;
+  overflow: hidden;
+  
+  .top {
+    position: relative;
+    display: flex;
+    padding: 16px;
+    margin-bottom: 40px;
+    
+    .decoration {
+      width: 300px;
+      height: 100px;
+      background: $base-color;
+      border-radius: 70px;
+      position: absolute;
+      opacity: 0;
+      transform: rotate(-30deg) translateX(320px) translateY(-80px);
+      animation: slide-decoration 1s forwards;
+    }
+    .decoration:nth-of-type(1) {
+      top: -95px;
+      left: 74%;
+      animation-delay: 0.8s;
+    }
+    .decoration:nth-of-type(2) {
+      top: 40px;
+      left: 71%;
+      width: 400px;
+      animation-delay: 0.8s;
+    }
+    .avatar, .avatar-circle {
+      width: 120px;
+      height: 120px;
+      background-color: #fff;
+      border-radius: 50%;
+      margin-left: 10px;
+    }
+    .avatar {
+      background-image: url("https://www.gravatar.com/avatar/b3ee61c86fd3667062b9e121d9955936?s=480");
+      background-size: 120px 120px;
+      background-position: center;
+    }
+    .avatar-circle {
+      position: absolute;
+      left: 35px;
+      background: $base-color;
+      z-index: -1;
+      transform: translateX(24px);
+      opacity: 0;
+      animation: slide-circle 1s forwards;
+      animation-delay: 0.5s;
+    }
+    .name {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 44px;
+      &__chi {
+        font-size: 1.8rem;
+        margin-bottom: 8px;
+      }
+      &__eng {
+        font-size: 1.3rem;
+        font-weight: 400;
+      }
+    }
+  }
+  
+  .content {
+    display: flex;
+    padding: 16px;
+    
+    .left {
+      flex: 5;
+      padding-right: 32px;
+    }
+    
+    .right {
+      flex: 8;
+      padding-left: 32px;
+      border-left: 3px solid white;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  margin-top: 24px;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes slide-decoration {
+  100% { 
+    transform: rotate(-30deg) translateX(0%) translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes slide-circle {
+  100% { 
+    transform: translateX(0%) translateY(0%);
+    opacity: 1;
+  }
+}
