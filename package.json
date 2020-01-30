@@ -1,0 +1,14 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "parcel build src/index.html",
+    "start": "parcel serve src/index.html"
+  },
+  "devDependencies": {
+    "sass": "^1.25.0"
+  },
+  "dependencies": {
+    "parcel": "^2.0.0-alpha.3.2"
+  }
+}
