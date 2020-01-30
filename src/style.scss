@@ -33,6 +33,9 @@ body {
     font-size: 0.87rem;
     margin-left: 12px;
   }
+  ul li p {
+    margin-left: 12px;
+  }
   ul li:not(:last-child) {
     margin-bottom: 12px;
   }
