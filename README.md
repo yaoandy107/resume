@@ -1,12 +1,6 @@
 # My Resume
-
-## Build & Deploy
-1. Run gulp to generate the build file.
+My resume 
+## Run
 ```shell
-parcel build src/index.html
-```
-
-2. Run `./deploy.sh` to deploy the resume to GitHub page. 
-```shell
-./deploy.sh
+npm run start
 ```
