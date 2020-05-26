@@ -4,7 +4,7 @@
 set -e
 
 # navigate into the build output directory
-cd build
+cd dist
 
 git init
 git add -A
