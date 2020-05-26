@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "build": "parcel build src/index.html",
-    "start": "parcel serve src/index.html"
+    "start": "parcel serve src/index.html",
+    "deploy": "./deploy.sh"
   },
   "devDependencies": {
     "sass": "^1.25.0"
