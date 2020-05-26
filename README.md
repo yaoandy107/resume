@@ -3,7 +3,7 @@
 ## Build & Deploy
 1. Run gulp to generate the build file.
 ```shell
-gulp
+parcel build src/index.html
 ```
 
 2. Run `./deploy.sh` to deploy the resume to GitHub page. 
